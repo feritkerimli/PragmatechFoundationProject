@@ -38,8 +38,15 @@
 .icon{
     margin: auto 10px;
 }
+.icon:hover{
+    font-size: 150%;
+}
 .btn{
     background-color: transparent;
+    border: white;
+}
+.btn:hover{
+    background-color: rgb(158, 154, 154);
 }
 .logo{
     height:94px ;
