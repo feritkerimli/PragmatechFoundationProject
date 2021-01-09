@@ -57,3 +57,40 @@
 .submit{
     background-color: transparent;
 }
+#container .container .row:nth-of-type(1){
+    height: 100px;
+}
+#container .container .row:nth-of-type(1) .col-4 .paket-ad{
+    height: 30px;
+    background-color: #454545;
+    text-align: center;
+    padding: 3px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+#container .container .row:nth-of-type(1) .col-4 .paket-qiymet{
+    height: 70px;
+    background-color: #838383;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1;
+    padding: 20px;
+}
+.uzvuluk-btn{
+    padding:15px 40px;
+    margin: auto;
+    background-color: #72d5cd;
+    border-color: #66b0ab;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+#container .container .row:nth-of-type(2) .col-3{
+    border: 1px solid black;
+    margin: 0px auto;
+    height: 120px;
+}
