@@ -1,0 +1,112 @@
+body{
+    .container:nth-of-type(1){
+        .row{
+            height: 30px;
+            .col-3{
+                align-self: center;
+            }
+        }
+    }
+    .container:nth-of-type(2){
+        .row{
+            height: 100px;
+            .col-6{
+                text-align: center;
+                object-fit: contain;
+                align-self: center;
+                .logo{
+                    height: 94px;
+                    width: 400px;
+                    size: border-box;
+                }
+            }
+        }
+    }
+    .container:nth-of-type(3){
+        .row{
+            height: 400px;
+            .col-12{
+                position: relative;
+            }
+        }
+    }
+    .container:nth-of-type(4){
+        .row{
+            height: 300px;
+        }
+    }
+    .container:nth-of-type(5){
+        .row{
+            height: 200px;
+        }
+    }
+.container-btn{
+    position: absolute;
+    bottom: 50px;
+    right: 70px;
+    padding: 12px 30px;
+    box-shadow: inset 0 0 5px grey;
+    background-color: lightseagreen;
+    color: white;
+}
+.icon{
+    margin: auto 10px;
+    &:hover{
+        font-size: 150%;
+    }
+}
+.btn{
+    background-color: transparent;
+    border: white;
+    &:hover{
+        background-color: rgb(158, 154, 154);
+    }
+}
+.submit{
+    background-color: transparent;
+}
+#container{
+    .container{
+        .row:nth-of-type(1){
+            height: 100px;
+            .col-4{
+                .paket-ad{
+                    height: 30px;
+                    background-color: #454545;
+                    text-align: center;
+                    padding: 3px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: white;
+                }
+                .paket-qiymet{
+                    height: 70px;
+                    background-color: #838383;
+                    color: white;
+                    text-align: center;
+                    font-size: 30px;
+                    font-weight: bold;
+                    line-height: 1;
+                    padding: 20px;
+                }
+            }
+        }
+        .row:nth-of-type(2){
+            .col-3{
+                border: 1px solid black;
+                margin: 0px auto;
+                height: 120px;
+            }
+        }
+    }
+}
+.uzvuluk-btn{
+    padding:15px 40px;
+    margin: auto;
+    background-color: #72d5cd;
+    border-color: #66b0ab;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+}

@@ -1,96 +1,118 @@
-.container:nth-of-type(1) .row{
-    height: 30px;
-}
-.container:nth-of-type(2) .row{
-    height: 100px;
-}
-.container:nth-of-type(3) .row{
-    height: 400px;
-}
-.container:nth-of-type(4) .row{
-    height: 300px;
-}
-.container:nth-of-type(5) .row{
-    height: 200px;
-}
-.container:nth-of-type(1) .row .col-3{
-    align-self: center;
-} 
-.container:nth-of-type(2) .row .col-6{
-    text-align: center;
-    object-fit: contain;
-}
-.container:nth-of-type(2) .row .col-6{
-    align-self: center;
-}
-.container:nth-of-type(3) .row .col-12{
-    position: relative;
-}
-.container-btn{
-    position: absolute;
-    bottom: 50px;
-    right: 70px;
-    padding: 12px 30px;
-    box-shadow: inset 0 0 5px grey;
-    background-color: lightseagreen;
-    color: white;
-}
-.icon{
-    margin: auto 10px;
-}
-.icon:hover{
-    font-size: 150%;
-}
-.btn{
-    background-color: transparent;
-    border: white;
-}
-.btn:hover{
-    background-color: rgb(158, 154, 154);
-}
-.logo{
-    height:94px ;
-    width: 400px;
-    size: border-box;
-
-}
-.submit{
-    background-color: transparent;
-}
-#container .container .row:nth-of-type(1){
-    height: 100px;
-}
-#container .container .row:nth-of-type(1) .col-4 .paket-ad{
-    height: 30px;
-    background-color: #454545;
-    text-align: center;
-    padding: 3px;
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
+body .container:nth-of-type(1) .row {
+  height: 30px;
 }
 
-#container .container .row:nth-of-type(1) .col-4 .paket-qiymet{
-    height: 70px;
-    background-color: #838383;
-    color: white;
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 1;
-    padding: 20px;
+body .container:nth-of-type(1) .row .col-3 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
-.uzvuluk-btn{
-    padding:15px 40px;
-    margin: auto;
-    background-color: #72d5cd;
-    border-color: #66b0ab;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
+
+body .container:nth-of-type(2) .row {
+  height: 100px;
 }
-#container .container .row:nth-of-type(2) .col-3{
-    border: 1px solid black;
-    margin: 0px auto;
-    height: 120px;
+
+body .container:nth-of-type(2) .row .col-6 {
+  text-align: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
+
+body .container:nth-of-type(2) .row .col-6 .logo {
+  height: 94px;
+  width: 400px;
+  size: border-box;
+}
+
+body .container:nth-of-type(3) .row {
+  height: 400px;
+}
+
+body .container:nth-of-type(3) .row .col-12 {
+  position: relative;
+}
+
+body .container:nth-of-type(4) .row {
+  height: 300px;
+}
+
+body .container:nth-of-type(5) .row {
+  height: 200px;
+}
+
+body .container-btn {
+  position: absolute;
+  bottom: 50px;
+  right: 70px;
+  padding: 12px 30px;
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  background-color: lightseagreen;
+  color: white;
+}
+
+body .icon {
+  margin: auto 10px;
+}
+
+body .icon:hover {
+  font-size: 150%;
+}
+
+body .btn {
+  background-color: transparent;
+  border: white;
+}
+
+body .btn:hover {
+  background-color: #9e9a9a;
+}
+
+body .submit {
+  background-color: transparent;
+}
+
+body #container .container .row:nth-of-type(1) {
+  height: 100px;
+}
+
+body #container .container .row:nth-of-type(1) .col-4 .paket-ad {
+  height: 30px;
+  background-color: #454545;
+  text-align: center;
+  padding: 3px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+body #container .container .row:nth-of-type(1) .col-4 .paket-qiymet {
+  height: 70px;
+  background-color: #838383;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1;
+  padding: 20px;
+}
+
+body #container .container .row:nth-of-type(2) .col-3 {
+  border: 1px solid black;
+  margin: 0px auto;
+  height: 120px;
+}
+
+body .uzvuluk-btn {
+  padding: 15px 40px;
+  margin: auto;
+  background-color: #72d5cd;
+  border-color: #66b0ab;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
