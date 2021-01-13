@@ -30,8 +30,21 @@ body .container:nth-of-type(3) .row .col-12 {
   position: relative;
 }
 
+body .container:nth-of-type(4) {
+  z-index: -2;
+}
+
 body .container:nth-of-type(4) .row {
+  z-index: -1;
   height: 300px;
+}
+
+body .container:nth-of-type(4) .row .col-12 {
+  z-index: 0;
+}
+
+body .container:nth-of-type(4) .row .col-12 .sekil {
+  z-index: 1;
 }
 
 body .container:nth-of-type(5) .row {
@@ -133,5 +146,25 @@ body .create-account {
   color: white;
   width: 15%;
   height: 40px;
+}
+
+body .btn-test {
+  background-color: transparent;
+  border: white;
+}
+
+body .btn-test .gizli {
+  z-index: 2;
+  position: absolute;
+  display: none;
+}
+
+body .btn-test:hover {
+  background-color: #9e9a9a;
+}
+
+body .btn-test:hover .gizli {
+  display: block !important;
+  background-color: #7a7a7a;
 }
 /*# sourceMappingURL=style.css.map */

@@ -31,8 +31,16 @@ body{
         }
     }
     .container:nth-of-type(4){
+        z-index: -2;
         .row{
+            z-index: -1;
             height: 300px;
+            .col-12{
+                z-index: 0;
+                .sekil{
+                    z-index: 1;
+                }
+            }
         }
     }
     .container:nth-of-type(5){
@@ -137,4 +145,23 @@ body{
         width: 15%;
         height: 40px;
     }
+    .btn-test{
+        .gizli{
+            z-index: 2;
+            position: absolute;
+            display: none;
+        }
+        background-color: transparent;
+        border: white;
+        
+    }
+    .btn-test:hover{
+        .gizli{
+            display: block !important;
+            background-color: rgb(122, 122, 122);
+        }
+        background-color: rgb(158, 154, 154);
+        
+    }
+
 }
