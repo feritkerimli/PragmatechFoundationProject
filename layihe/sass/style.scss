@@ -163,5 +163,80 @@ body{
         background-color: rgb(158, 154, 154);
         
     }
+    #sign{
+        z-index: 1;
+        display: none;
+        position: absolute;
+        top: 100px;
+        right: 325px;
+        height: 500px;
+        width: 700px;
+        background-color: rgb(236, 236, 234); 
+        .exit{
+            border: transparent;
+            padding: 10px 15px;
+        }
+        .container:nth-of-type(2){
+            .row:nth-of-type(1){
+                .col-12{
+                    font-size: 20px;
+                }
+            }
+            .row:nth-of-type(2){
+                .col-6{
+                    text-align: start;
+                    .sign-input{
+                        height: 30px;
+                        width: 80% ;
+                    }        
+                }
+            }
+            .row:nth-of-type(3){
+                .col-12{
+                    .sifre-berpa-link{
+                        color: rgb(57, 201, 186);
+                        font-size: 17px;
+                    }
+                }
+            }
+            .row:nth-of-type(4){
+                .col-12{
+                    text-align: center;
+                }
+            }
+            .row:nth-of-type(5){
+                .col-12{
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+            .row:nth-of-type(6){
+                .col-12{
+                    text-align: center;
+                }
+            }
+
+        } 
+    }
+    #giris-fon{
+        z-index: 0;
+        position: absolute;
+        top: 0px;
+        height: 1050px;
+        width: 100%;
+        background-color: rgba(31, 30, 30, 0.5);
+        display: none;
+    }
+    .btn-giris{
+        width: 90%;
+        padding: 5px 0px;
+        margin: auto;
+        background-color: #72d5cd;
+        border-color: #66b0ab;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
 
 }
