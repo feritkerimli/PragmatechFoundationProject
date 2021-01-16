@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/grid.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="img/logo.png">
+        <script src="java/java.js"></script>
     </head>
     <body>
         <div class="container">
@@ -28,7 +29,7 @@
                 <div class="col-3">
                     <i class="fas fa-lock"></i>
                     <a href="file:///C:/Users/Admin/Desktop/pragmatech/layihe/qeydiyyat.html"><button class="btn">Qeydiyyat kec</button></a>|
-                    <a href="file:///C:/Users/Admin/Desktop/pragmatech/layihe/giris.html"><button class="btn">Daxil ol</button></a>
+                    <button class="btn" onclick="tikla()">Daxil ol</button>
                 </div>
             </div>
         </div>
@@ -118,5 +119,49 @@
                 </div>
             </div>
         </section>
+        <section id="sign">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12" style="text-align: end; padding: 0px;" > 
+                        <button class="exit" onclick="exit()"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row" style="height: 30px;">
+                    <div class="col-12">Giris</div>
+                </div>
+                <div class="row" >
+                    <div class="col-6" >
+                        <h3>istifedeci adi</h3>
+                        <input type="text" class="sign-input">
+                    </div>
+                    <div class="col-6" >
+                        <h3>Sifre</h3>
+                        <input type="password" class="sign-input">
+                    </div>
+                </div>
+                <div class="row" style="height: 25px;">
+                    <div class="col-12">
+                        <a href="file:///C:/Users/Admin/Desktop/pragmatech/layihe/losepasword.html" class="sifre-berpa-link">Sifreni itiribsen?</a>
+                    </div>
+                </div>
+                <div class="row" style="height: 50px;">
+                    <div class="col-12">
+                        <button type="submit" class="btn-giris">Giris</button>
+                    </div>
+                </div>
+                <div class="row" style="height: 30px;">
+                    <div class="col-12">Hesabiniz yoxdur?</div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p>Yeni hesab yaradin</p>
+                        <a href="file:///C:/Users/Admin/Desktop/pragmatech/layihe/qeydiyyat.html"><button class="btn-giris">Qeydiyyat</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="giris-fon"></section>
     </body>
 </html>
