@@ -28,7 +28,7 @@
             </div>
             <div class="col-3">
                 <i class="fas fa-lock"></i>
-                <a href="file:///C:/Users/Admin/Desktop/pragmatech/layihe/qeydiyyat.html"><button class="btn">Qeydiyyat kec</button></a>|
+                <a href="file:///C:/Users/Admin/Desktop/pragmatech/layihe/qeydiyyat.html"><button class="btn">Qeydiyyat</button></a>|
                 <button class="btn" onclick="tikla()">Daxil ol</button>
             </div>
         </div>
@@ -49,8 +49,10 @@
                     </div></button>
                     <a href="file:///C:/Users/Admin/Desktop/pragmatech/layihe/haqqinda.html"><button class="btn">Haqqinda</button></a>
                     <a href="file:///C:/Users/Admin/Desktop/pragmatech/layihe/uzvuluk.html"><button class="btn">Uzvuluk</button></a>
-                    <input type="text" class="search">
-                    <button class="submit"><i class="fas fa-search"></i></button>
+                    <form action="" id="form-search" onkeydown="enter()">
+                        <input type="text" id="search" value="">
+                        <button class="submit" value="submit"><i class="fas fa-search" onclick="search()"></i></button>
+                    </form>
                 </nav>
             </div>
 
