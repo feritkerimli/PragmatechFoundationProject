@@ -1,4 +1,3 @@
-/*
 var ededler=[1,3,4,90,23,890,12,30,4,3,67,21];
 var cem=0;
 // Massivdeki ededlerin cemini tapan kod
@@ -51,42 +50,4 @@ for(var i=890;i>0;--i){
     }
 }
 console.log("Massivdeki ededlerin azalan sirasi:"+azalan);
-*/
-var cars=[];
-class car{
-    constructor(_carName,_carModel,_carPrice){
-        this.Name=_carName,
-        this.Model=_carModel,
-        this.Price=_carPrice,
-        function showCarDetails(){
-            return "Name "+this.Name+" "+"Model "+this.Model+" "+"Price "+this.Price;
-        }
-    }
 
-}
-var car1=new car("Niva","Lada",5000);
-var car2=new car("Vectra","Opel",8000);
-var car3=new car("Samara","Lada",6000);
-var car4=new car("x5","Mercedes",15000);
-var car5=new car("Portofino","Ferrari",100000);
-cars.push(car1,car2,car3,car4,car5);
-function showCarByName(carName){
-    for(var i=0;i<5;i++){
-        if(cars[i].Name==carName){
-            return "Name "+cars[i].Name+" "+"Model "+cars[i].Model+" "+"Price "+cars[i].Price;
-        }
-        else{
-            continue;
-        }
-    }
-}
-var cars_Price=[];
-function showCarsByPrice(carprice){
-    for(var i=0;i<5;i++){
-        if(cars[i].Price>carprice){
-            cars_Price.push(cars[i]);
-            
-        }
-    }
-    return cars_Price;
-}

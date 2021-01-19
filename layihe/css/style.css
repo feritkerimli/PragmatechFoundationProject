@@ -235,4 +235,16 @@ body .btn-giris {
   font-size: 20px;
   font-weight: bold;
 }
+
+body .say-test {
+  text-align: end;
+}
+
+body .say-test #say_duz {
+  display: inline-block;
+}
+
+body .say-test #say_umumi {
+  display: inline-block;
+}
 /*# sourceMappingURL=style.css.map */

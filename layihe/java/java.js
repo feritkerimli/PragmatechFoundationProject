@@ -20,8 +20,10 @@ var duz = false;
 var a= false;
 var b= false;
 var sub_btn=false;
+var duz_say=0;
 function yoxlama(){
   duz = true
+  
 }
 function value_1(){
   a = true
@@ -31,7 +33,9 @@ function value_2(){
 }
 function testyoxla(){
   if (duz==true){
+    duz_say+=1;
     document.getElementById("labelduz").style.color="green";
+    document.getElementById("say_duz").innerHTML=duz_say;
   }
   else if(a==true){
     document.getElementById("labelduz").style.color="green";
