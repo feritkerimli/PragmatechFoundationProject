@@ -1,4 +1,5 @@
 /*
+Task-Week05-Day01
 var ededler=[1,3,4,90,23,890,12,30,4,3,67,21];
 var cem=0;
 // Massivdeki ededlerin cemini tapan kod
@@ -39,7 +40,7 @@ for(var i=0;i<12;i++){
         say_ikireqemli+=1;
     }
 }
-console.log("Massivdeki ikireqemli ededlerin sayi:"+say_ikireqemli);
+onsole.log("Massivdeki ikireqemli ededlerin sayi:"+say_ikireqemli);
 // Massivdeki ededleri azalan sira ile ekrana yazdiran kod
 var massiv=[1,3,4,90,23,890,12,30,4,3,67,21];
 var azalan='';
@@ -52,6 +53,11 @@ for(var i=890;i>0;--i){
 }
 console.log("Massivdeki ededlerin azalan sirasi:"+azalan);
 */
+
+
+
+/*
+Task-in-Lesson 
 var cars=[];
 class car{
     constructor(_carName,_carModel,_carPrice){
@@ -89,4 +95,118 @@ function showCarsByPrice(carprice){
         }
     }
     return cars_Price;
+}
+*/
+
+
+userList=[
+    {
+        name:'Sabir',
+        email:'sabir@mail.com',
+        userTasks:[
+            {
+                taskName:'Task01',
+                taskDeadline:2
+            },
+            {
+                taskName:'Task02',
+                taskDeadline:8
+            },
+            {
+                taskName:'Task03',
+                taskDeadline:10
+            }
+        ]
+    },
+    {
+        name:'Hesen',
+        email:'hesen.mail.com',
+        userTasks:[
+            {
+                taskName:'XTask01',
+                taskDeadline:2
+            },
+            {
+                taskName:'XTask02',
+                taskDeadline:15
+            },
+            {
+                taskName:'XTask03',
+                taskDeadline:4
+            }
+        ]
+    }
+]
+
+// istifadeci adini daxil etdiyim zaman o istifadecinin tasklarini gosteren function
+
+function findUserTasksByName(userName){
+    for(var i=0;i<userList.length;i++){
+        if(userList[i].name==userName){
+            console.log("istifadecinin tasklari")
+            console.log(userList[i].userTasks)
+        }
+    }
+
+} 
+
+// butun istifadecilerin mail adreslerinin duzgun olub olmadigini yoxlayin (mail daxilinde @ isaretinin olub olmamasi)
+    // duzgun olmayan mail adresi varsa o mailin hansi istifadeciye aid oldugunu ekrana cap edin
+function userEmailCheck(){
+    for(var i=0;i<userList.length;i++){
+        var _email=userList[i].email
+        var _s=0;
+        for(var j=0;j<_email.length;j++){
+            if(_email[j]=="@"){
+                _s+=1
+            }
+            else{
+                continue
+            }
+        }
+        if(_s==0){
+            console.log(userList[i].name)
+        }
+        else{
+            continue
+        }
+    }
+}
+
+
+// en uzun deadlinea sahib olan taskin adini,muddetini ve o taskin hansi istifadeciye aid oldugunu ekrana cap edin
+function findLongestDeadline(){
+    var costTask1=[];
+    var costTask2=[];
+    for(var i=0;i<userList[0].userTasks.length;i++){
+        costTask1.push(userList[0].userTasks[i].taskDeadline)
+    };
+    for(var i=0;i<userList[1].userTasks.length;i++){
+        costTask2.push(userList[1].userTasks[i].taskDeadline)
+    };
+    var costTasks=costTask1.concat(costTask2);
+    var azalan=[];
+    for(var i=100;i>0;--i){
+        for(var j=0;j<costTasks.length;j++){
+            if(i==costTasks[j]){
+                azalan.push(costTasks[j]);  
+            }
+        }
+    };
+    var bigcost=azalan[0];
+    var bigCostIndex=0;
+    for(var i=0;i<costTasks.length;i++){
+        if(costTasks[i]==bigcost){
+            bigCostIndex=i;
+        }
+    }
+
+    if(bigCostIndex<costTask1.length){
+        console.log((userList[0].name)+" "+(userList[0].userTasks[bigCostIndex].taskName)+" "+(userList[0].userTasks[bigCostIndex].taskDeadline));
+    }
+    else{
+        console.log("En uzun deadlinea sahib olan taskin sahibi,taskin adi,taskin deadline'si")
+        console.log((userList[1].name)+" "+(userList[1].userTasks[bigCostIndex-costTask1.length].taskName)+" "+(userList[1].userTasks[bigCostIndex-costTask1.length].taskDeadline));
+    }                                                         
+
 }
