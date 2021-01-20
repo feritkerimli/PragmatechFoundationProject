@@ -70,18 +70,45 @@
                 <div class="row">
                     <div class="col-7">
                         <h1>V.I.P/TEST</h1>
-                        <h1>Not:</h1><p>Seciminizi deyismek isteseniz,cavabi silin duymesine basaraq seciminizi deyisdirin.Eks teqdirde cavabiniz sehv goturule biler.</p>
-                        <h1>Ilk sual</h1>
-                        <p><b>1</b>.Hansi metod ededin EBOB-unu tapir?</p>
-                        <input type="radio" value="1" id="1" name="variant" onclick="value_1()">
-                        <label for="1" id="label-a">sqrt</label>
-                        <input type="radio" value="2" id="2" name="variant" onclick="value_2()">
-                        <label for="2" id="label-c">math</label>
-                        <input type="radio" value="duz" id="duz" name="variant" onclick="yoxlama()">
-                        <label for="duz" id="labelduz">gcd</label>
-                        <button id="reset" onclick="reset()">Cavabi silin</button>
-                        <hr>
-                        <button type="submit" onclick="testyoxla()" id="submit-btn">Yoxla</button>
+                        <h1>Basic suallar</h1>
+                        <div class="say-test">
+                            <nav>
+                                <p id="say_duz">0</p>
+                                <p id="say_umumi">/3</p>
+                            </nav>
+                        </div>
+                        <form name="formTest">
+                            <fieldset class="radiogroup">
+                            <legend><b>1</b>.Sətirin həm başlanğıcındakı həm də sonundakı boşluqları aradan qaldırmaq üçün hansi metoddan istifadə edilə bilər?</legend>
+                             <ul class="radio" style="list-style:none">
+                              <li><input type="radio" name="q1" value="A" /><label>trim()</label></li>
+                              <li><input type="radio" name="q1" value="B" /><label>ptrim()</label></li>
+                              <li><input type="radio" name="q1" value="duz" /><label id="label_duz1">strip()</label></li>
+                             </ul>
+                             <p id="sual1"></p>
+                            </fieldset>
+                            
+                            <fieldset class="radiogroup">
+                            <legend><b>2</b>.Hansı kolleksiya üzvlərin təkrarlanmasına icazə vermir?</legend>
+                             <ul class="radio" style="list-style:none">
+                              <li><input type="radio" name="q2" value="A" /><label>List</label></li>
+                              <li><input type="radio" name="q2" value="B" /><label>Tuple</label></li>
+                              <li><input type="radio" name="q2" value="duz" /><label id="label_duz2">Set</label></li>
+                             </ul>
+                             <p id="sual2"></p>
+                            </fieldset> 
+                            
+                            <fieldset class="radiogroup">
+                            <legend><b>3</b>Bu kolleksiyalardan hansı TUPLE-i müəyyənləşdirir?</legend>
+                             <ul class="radio" style="list-style:none">
+                              <li><input type="radio" name="q3" value="A" /><label>{"ad": "alma", "rəng": "yaşıl"}</label></li>
+                              <li><input type="radio" name="q3" value=duz /><label id="label_duz3">("alma", "banan", "albalı")</label></li>
+                              <li><input type="radio" name="q3" value="B" /><label>["alma", "banan", "albalı"]</label></li>
+                             </ul>
+                             <p id="sual3"></p>
+                            </fieldset> 
+                            <button type="button" value="Yoxla" onclick="Yoxla_sual()" id="Yoxla" class="create-account" style="width: 150px; margin: 10px 0px;">Yoxla</button>
+                        </form>
                     </div>
                     <div class="col-4" style="padding: 20px;">
                         <h3>Testler</h3>

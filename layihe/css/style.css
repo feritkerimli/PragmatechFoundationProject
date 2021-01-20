@@ -279,4 +279,12 @@ body p {
 body #form-search {
   display: inline-block;
 }
+
+body #label_duz_react {
+  display: inline-block !important;
+}
+
+body #label_duz_variant {
+  display: inline-block !important;
+}
 /*# sourceMappingURL=style.css.map */

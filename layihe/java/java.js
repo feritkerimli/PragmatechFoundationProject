@@ -67,22 +67,56 @@ function enter(){
   }
 }
 
-var _duz1=document.formTest.q1.value;
-var _duz2=document.formTest.q2.value;
-var _duz3=document.formTest.q3.value;
-var correct=0;
-if(_duz1=="duz"){
-  correct++;
-};
-if(_duz2=="duz"){
-  correct++
-}
-if(_duz3=="duz"){
-  correct++
-}
-
-
 function Yoxla_sual(){
-  document.getElementById("rapor").innerHTML=correct;
+  var _duz1=document.formTest.q1.value;
+  var _duz2=document.formTest.q2.value;
+  var _duz3=document.formTest.q3.value;
+  var correct=0;
+  if(_duz1=="duz"){
+    correct+=1;
+    document.getElementById("sual1").innerHTML="Duzgun";
+  }
+  else if(_duz1==""){
+    document.getElementById("sual1").innerHTML="Cavablandirilmayib";
+    document.getElementById("label_duz1").style.color="green";
+  }
+  else{
+    document.getElementById("sual1").innerHTML="Sehv";
+    document.getElementById("label_duz1").style.color="green";
+
+  }
+  if(_duz2=="duz"){
+    correct+=1;
+    document.getElementById("sual2").innerHTML="Duzgun";
+  }
+  else if(_duz2==""){
+    document.getElementById("sual2").innerHTML="Cavablandirilmayib";
+    document.getElementById("label_duz2").style.color="green";
+  }
+  else{
+    document.getElementById("sual2").innerHTML="Sehv";
+    document.getElementById("label_duz2").style.color="green";
+  }
+  if(_duz3=="duz"){
+    correct+=1;
+    document.getElementById("sual3").innerHTML="Duzgun";
+  }
+  else if(_duz3==""){
+    document.getElementById("sual3").innerHTML="Cavablandirilmayib";
+    document.getElementById("label_duz3").style.color="green";
+  }
+  else{
+    document.getElementById("sual3").innerHTML="Sehv";
+    document.getElementById("label_duz3").style.color="green";
+  }
+  if(correct==1){
+    document.getElementById("say_duz").innerHTML="1";
+  }
+  else if(correct==2){
+    document.getElementById("say_duz").innerHTML="2";
+  }
+  else if(correct==3){
+    document.getElementById("say_duz").innerHTML="3";
+  }
   
 }

@@ -69,22 +69,22 @@
             <div class="container">
                 <div class="row">
                     <div class="col-7">
-                        <h1>Not:</h1><p>Seciminizi deyismek isteseniz,cavabi silin duymesine basaraq seciminizi deyisdirin.Eks teqdirde cavabiniz sehv goturule biler.</p>
-                        <h1>Ilk sual</h1>
+                        <h1>Basic suallar</h1>
                         <div class="say-test">
                             <nav>
                                 <p id="say_duz">0</p>
-                                <p id="say_umumi">/1</p>
+                                <p id="say_umumi">/3</p>
                             </nav>
                         </div>
-                        <form name="formTest" name="formTest">
+                        <form name="formTest">
                             <fieldset class="radiogroup">
                             <legend><b>1</b>.Yazi ekrana hansi funksiya ile cap edilir?</legend>
                              <ul class="radio" style="list-style:none">
                               <li><input type="radio" name="q1" value="A" /><label>abs</label></li>
-                              <li><input type="radio" name="q1" value="duz" /><label>print</label></li>
+                              <li><input type="radio" name="q1" value="duz" /><label id="label_duz1">print</label></li>
                               <li><input type="radio" name="q1" value="B" /><label>input</label></li>
                              </ul>
+                             <p id="sual1"></p>
                             </fieldset>
                             
                             <fieldset class="radiogroup">
@@ -92,8 +92,9 @@
                              <ul class="radio" style="list-style:none">
                               <li><input type="radio" name="q2" value="A" /><label>var a = 0;</label></li>
                               <li><input type="radio" name="q2" value="B" /><label>let s = 0{}</label></li>
-                              <li><input type="radio" name="q2" value="duz" /><label>a = 0</label></li>
+                              <li><input type="radio" name="q2" value="duz" /><label id="label_duz2">a = 0</label></li>
                              </ul>
+                             <p id="sual2"></p>
                             </fieldset> 
                             
                             <fieldset class="radiogroup">
@@ -101,11 +102,11 @@
                              <ul class="radio" style="list-style:none">
                               <li><input type="radio" name="q3" value="A" /><label>/* Serh */</label></li>
                               <li><input type="radio" name="q3" value="B" /><label>// Serh</label></li>
-                              <li><input type="radio" name="q3" value=duz /><label># Serh</label></li>
+                              <li><input type="radio" name="q3" value=duz /><label id="label_duz3"># Serh</label></li>
                              </ul>
+                             <p id="sual3"></p>
                             </fieldset> 
-                            <button type="button" value="Yoxla" onclick="Yoxla_sual()" id="Yoxla">Yoxla</button>
-                            <p id="rapor">0</p>
+                            <button type="button" value="Yoxla" onclick="Yoxla_sual()" id="Yoxla" class="create-account" style="width: 150px; margin: 10px 0px;">Yoxla</button>
                         </form>
                     </div>
                     <div class="col-4" style="padding: 20px;">
