@@ -120,3 +120,5 @@ function Yoxla_sual(){
   }
   
 }
+
+
