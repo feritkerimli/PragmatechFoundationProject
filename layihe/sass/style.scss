@@ -270,5 +270,17 @@ p{
 #form-search{
     display: inline-block;
 }
+.logo{
+    object-fit: cover;
+}
+
+.yoxla{
+    border: transparent;
+    border-bottom: 5px solid #65b4ad;
+    background-color: #72d5cd;
+    color: white;
+    width: 15%;
+    height: 40px;
+}
 
 }

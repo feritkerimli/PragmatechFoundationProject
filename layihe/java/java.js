@@ -3,6 +3,7 @@ document.getElementById("sign").addEventListener("onclick", onclick);
 document.getElementById("giris-fon").addEventListener("onclick",onclick);
 document.getElementById("giris-fon").addEventListener("onclick", onclick);
 document.getElementById("Yoxla").addEventListener("onclick", onclick);
+document.getElementsByClassName("submit").addEventListener("search", onmouseover);
 
 function tikla(){
   document.getElementById("sign").style.display = "block";
@@ -12,8 +13,10 @@ function exit(){
     document.getElementById("sign").style.display = "none";
     document.getElementById("giris-fon").style.display = "none";
 };
+
 function search(){
-  var element=document.getElementById("search").value;
+
+ var element=document.getElementById("search").value;
   if((element=="Python") || (element=="python")){
     document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/pyhton.html"
   }
@@ -39,6 +42,7 @@ function search(){
     document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/viptestriyaziyyat.html"
   }
 }
+
 function enter(){
   var element=document.getElementById("search").value;
   if((element=="Python") || (element=="python")){
