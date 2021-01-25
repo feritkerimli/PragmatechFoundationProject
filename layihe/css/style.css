@@ -6,20 +6,26 @@ body .container:nth-of-type(1) .row .col-3 {
   align-self: center;
 }
 
-body .container:nth-of-type(2) .row {
-  height: 100px;
-}
-
-body .container:nth-of-type(2) .row .col-6 {
+body .container:nth-of-type(2) .row .col-7 {
   text-align: center;
   object-fit: contain;
   align-self: center;
 }
 
-body .container:nth-of-type(2) .row .col-6 .logo {
-  height: 94px;
-  width: 400px;
-  size: border-box;
+body .container:nth-of-type(2) .row .col-5 {
+  text-align: center;
+  object-fit: contain;
+  align-self: center;
+  overflow: hidden;
+  object-fit: cover;
+  padding: 10px;
+}
+
+body .container:nth-of-type(2) .row .col-5 .logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 body .container:nth-of-type(3) .row {
@@ -114,6 +120,7 @@ body #container .container .row:nth-of-type(2) .col-3 {
 }
 
 body .uzvuluk-btn {
+  align-self: flex-end;
   padding: 15px 40px;
   margin: auto;
   background-color: #72d5cd;
@@ -173,9 +180,9 @@ body #sign {
   display: none;
   position: absolute;
   top: 100px;
-  right: 325px;
-  height: 500px;
-  width: 700px;
+  margin-left: 200px;
+  height: 100%;
+  width: 60%;
   background-color: #ececea;
 }
 

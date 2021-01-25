@@ -4,6 +4,10 @@ document.querySelector('.box').innerHTML=`<img src=img/1.jpg >
                                           <div id="para"><p>Adventurer Cheesecake Brownie</p></div>`;
 var boxs=document.querySelectorAll('.box');
 //button right
+/*
+animation-duration: 1s;
+animation-iteration-count: 1;
+*/
 function kec1(){
     var boxs=document.querySelectorAll('.box');
     boxs[0].innerHTML= `<img src=img/2.jpg >
@@ -12,6 +16,7 @@ function kec1(){
                         <div id="para"><p>Adventurer Lemon</p></div>`
 }
 function kec2(){
+    document.querySelector('img').style.animationName="kecid1";
     var boxs=document.querySelectorAll('.box');
     boxs[0].innerHTML= `<img src=img/3.jpg >
                         <button id="btn" onclick="kec3()"><i class="fas fa-chevron-right"></i></button>
@@ -19,6 +24,7 @@ function kec2(){
                         <div id="para"><p>Adventurer Donut</p></div>`
 }
 function kec3(){
+    document.querySelector('img').style.animationName="kecid1";
     var boxs=document.querySelectorAll('.box');
     boxs[0].innerHTML= `<img src=img/4.jpg >
                         <button id="btn" onclick="kec4()"><i class="fas fa-chevron-right"></i></button>
@@ -26,6 +32,7 @@ function kec3(){
                         <div id="para"><p>Adventurer Caramel</p></div>`
 }
 function kec4(){
+    document.querySelector('img').style.animationName="kecid1";
     var boxs=document.querySelectorAll('.box');
     boxs[0].innerHTML= `<img src=img/1.jpg>
                         <button id="btn" onclick="kec1()"><i class="fas fa-chevron-right"></i></button>
@@ -36,28 +43,28 @@ function kec4(){
 //button left
 function qayit1(){
     var boxs=document.querySelectorAll('.box');
-    boxs[0].innerHTML= `<img src=img/4.jpg >
+    boxs[0].innerHTML= `<img src=img/4.jpg style="animation-name: kecid2;">
                         <button id="btn" onclick="kec4()"><i class="fas fa-chevron-right"></i></button>
                         <button id="btn-left" onclick="qayit4()"><i class="fas fa-chevron-left"></i></button>
                         <div id="para"><p>Adventurer Caramel</p></div>`
 }
 function qayit2(){
     var boxs=document.querySelectorAll('.box');
-    boxs[0].innerHTML= `<img src=img/1.jpg >
+    boxs[0].innerHTML= `<img src=img/1.jpg style="animation-name: kecid2;">
                         <button id="btn" onclick="kec1()"><i class="fas fa-chevron-right"></i></button>
                         <button id="btn-left" onclick="qayit1()"><i class="fas fa-chevron-left"></i></button>
                         <div id="para"><p>Adventurer Cheesecake Brownie</p></div>`
 }
 function qayit3(){
     var boxs=document.querySelectorAll('.box');
-    boxs[0].innerHTML= `<img src=img/2.jpg >
+    boxs[0].innerHTML= `<img src=img/2.jpg style="animation-name: kecid2;">
                         <button id="btn" onclick="kec2()"><i class="fas fa-chevron-right"></i></button>
                         <button id="btn-left" onclick="qayit2()"><i class="fas fa-chevron-left"></i></button>
                         <div id="para"><p>Adventurer Lemon</p></div>`
 }
 function qayit4(){
     var boxs=document.querySelectorAll('.box');
-    boxs[0].innerHTML= `<img src=img/3.jpg>
+    boxs[0].innerHTML= `<img src=img/3.jpg style="animation-name: kecid2;">
                         <button id="btn" onclick="kec3()"><i class="fas fa-chevron-right"></i></button>
                         <button id="btn-left" onclick="qayit3()"><i class="fas fa-chevron-left"></i></button>
                         <div id="para"><p>Adventurer Donut</p></div>`

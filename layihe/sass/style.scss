@@ -9,17 +9,28 @@ body{
     }
     .container:nth-of-type(2){
         .row{
-            height: 100px;
-            .col-6{
+            
+            .col-7{
                 text-align: center;
                 object-fit: contain;
                 align-self: center;
+            }
+            .col-5{
+                text-align: center;
+                object-fit: contain;
+                align-self: center;
+                overflow: hidden;
+                object-fit: cover;
+                padding: 10px;
+            
                 .logo{
-                    height: 94px;
-                    width: 400px;
-                    size: border-box;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    overflow: hidden;
                 }
             }
+            
         }
     }
     .container:nth-of-type(3){
@@ -109,6 +120,7 @@ body{
     }
 }
 .uzvuluk-btn{
+    align-self:flex-end; 
     padding:15px 40px;
     margin: auto;
     background-color: #72d5cd;
@@ -168,9 +180,9 @@ body{
         display: none;
         position: absolute;
         top: 100px;
-        right: 325px;
-        height: 500px;
-        width: 700px;
+        margin-left: 200px;
+        height: 100%;
+        width: 60%;
         background-color: rgb(236, 236, 234); 
         .exit{
             border: transparent;
@@ -282,5 +294,7 @@ p{
     width: 15%;
     height: 40px;
 }
+
+
 
 }
