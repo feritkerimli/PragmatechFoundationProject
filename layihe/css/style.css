@@ -1,37 +1,3 @@
-body .container:nth-of-type(1) .row {
-  height: 30px;
-}
-
-body .container:nth-of-type(1) .row .col-3 {
-  align-self: center;
-}
-
-body .container:nth-of-type(2) .row .col-7 {
-  text-align: center;
-  object-fit: contain;
-  align-self: center;
-}
-
-body .container:nth-of-type(2) .row .col-5 {
-  text-align: center;
-  object-fit: contain;
-  align-self: center;
-  overflow: hidden;
-  object-fit: cover;
-  padding: 10px;
-}
-
-body .container:nth-of-type(2) .row .col-5 .logo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
-}
-
-body .container:nth-of-type(3) .row {
-  height: 400px;
-}
-
 body .container:nth-of-type(3) .row .col-12 {
   position: relative;
 }
@@ -53,10 +19,6 @@ body .container:nth-of-type(4) .row .col-12 .sekil {
   z-index: 1;
 }
 
-body .container:nth-of-type(5) .row {
-  height: 200px;
-}
-
 body .container-btn {
   position: absolute;
   bottom: 50px;
@@ -67,11 +29,7 @@ body .container-btn {
   box-shadow: inset 0 0 5px grey;
 }
 
-body .icon {
-  margin: auto 10px;
-}
-
-body .icon:hover {
+body #icon:hover {
   font-size: 150%;
 }
 
@@ -298,5 +256,9 @@ body .yoxla {
   color: white;
   width: 15%;
   height: 40px;
+}
+
+body .nav-link {
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */

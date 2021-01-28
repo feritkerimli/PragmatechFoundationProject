@@ -1,10 +1,3 @@
-document.getElementById("sign").addEventListener("onclick",onclick);
-document.getElementById("sign").addEventListener("onclick", onclick);
-document.getElementById("giris-fon").addEventListener("onclick",onclick);
-document.getElementById("giris-fon").addEventListener("onclick", onclick);
-document.getElementById("Yoxla").addEventListener("onclick", onclick);
-document.getElementsByClassName("submit").addEventListener("search", onmouseover);
-
 function tikla(){
   document.getElementById("sign").style.display = "block";
   document.getElementById("giris-fon").style.display = "block";
@@ -123,6 +116,19 @@ function Yoxla_sual(){
     document.getElementById("say_duz").innerHTML="3";
   }
   
+}
+
+function create(){
+  var username=document.querySelectorAll(".username");
+  var regist_cost=[]
+  for(var i=0;i<username.length;i++){
+    if(username[i].value!=""){
+      regist_cost.push(username[i].value)
+    }
+  }
+  if(regist_cost.length!=8){
+    document.getElementById("regist-warning").style.display="block";
+  }
 }
 
 
