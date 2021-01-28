@@ -1,0 +1,11 @@
+#image {
+  height: 250px;
+  width: 200px;
+  display: block;
+  visibility: visible;
+}
+
+#p_melumat {
+  resize: none;
+}
+/*# sourceMappingURL=style.css.map */
