@@ -14,7 +14,7 @@
     <title>E-Test</title>
   </head>
   <body>
-    <section id="top-navbar navbar-dark bg-dark">
+    <section id="top-navbar navbar-dark bg-dark" style="height: 30px;">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
@@ -23,17 +23,17 @@
                             <div class="col-12">
                                 <div class="top-navbar-inner py-2 d-flex justify-content-between">
                                     <div>
-                                        <span><i class="far fa-envelope mx-2"></i>feridkerimli1918@gmail.com</span>
-                                        <span><i class="fas fa-phone mx-3"></i>(070)870-71-79</span>
+                                        <span style="color: #292929;"><i class="far fa-envelope mx-2"></i>feridkerimli1918@gmail.com</span>
+                                        <span style="color: #292929;"><i class="fas fa-phone mx-2"></i>(070)870-71-79</span>
                                     </div>
                                     <div>
                                         <ul class="nav">
-                                            <li class="nav-item"><a id="icon" class="nav-link" style="color: black;" href="https://www.facebook.com/ferit.kerimli.5/"><i class="fab fa-facebook"></i></a></li>
-                                            <li class="nav-item"><a id="icon" class="nav-link" style="color: black;" href="https://www.instagram.com/ferit.kerimli2/"><i class="fab fa-instagram-square"></i></a></li>                        
-                                            <li class="nav-item">
-                                                <a class="nav-link" style="color: black; display: inline-block;" href="file:///C:/Users/Admin/Desktop/pragmatech/layihe/qeydiyyat.html"><i class="fas fa-lock mx-1"></i>Qeydiyyat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</a>  
+                                            <li class="nav-item mx-2"><a id="icon" class="nav-link" style="color: #292929; margin: 0px; padding: 0px;" href="https://www.facebook.com/ferit.kerimli.5/"><i class="fab fa-facebook"></i></a></li>
+                                            <li class="nav-item mx-2"><a id="icon" class="nav-link" style="color: #292929; margin: 0px; padding: 0px;" href="https://www.instagram.com/ferit.kerimli2/"><i class="fab fa-instagram-square"></i></a></li>          
+                                            <li class="nav-item mx-5">
+                                                <a class="nav-link" style="color: #292929; display: inline-block; margin: 0px; padding: 0px;" href="file:///C:/Users/Admin/Desktop/pragmatech/layihe/qeydiyyat.html"><i class="fas fa-lock mx-1"></i>&nbsp;Qeydiyyat&nbsp;|</a>
+                                                <a class="nav-link" style="color: #292929; cursor: pointer; display: inline-block; margin: 0px; padding: 0px;" href="#" onclick="tikla()">Daxil ol</a>
                                             </li>
-                                            <li class="nav-item"><a class="nav-link" style="color: black; cursor: pointer;" href="#" onclick="tikla()">Daxil ol</a></li>
                                         </ul>
                                         
                                     </div>
@@ -43,7 +43,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
     <section id="main-navbar">
@@ -54,10 +53,10 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="main-navbar-inner py-3 d-flex justify-content-start align-items-center">
-                                    <div class="main-logo">
-                                        <img src="img/logo3.png">
+                                    <div class="main-logo" style="height: 50px; margin-bottom: 40px; margin-right: 250px;">
+                                        <img src="img/logo3.png" style="object-fit: cover; height: 100px; padding-bottom: 10px;">
                                     </div>
-                                    <div class="main-navbar-nav ">
+                                    <div class="main-navbar-nav mt-4">
                                         <ul class="nav">
                                             <li class='nav-item'><a href="file:///C:/Users/Admin/Desktop/pragmatech/layihe/anasehife.html" class='nav-link'>Ana sehife</a></li>
                                             <li class="nav-item dropdown">
@@ -77,10 +76,10 @@
                                             <li class='nav-item' style="display: inline-block;">
                                                 <a href="file:///C:/Users/Admin/Desktop/pragmatech/layihe/uzvuluk.html" class='nav-link'>Uzvuluk</a>
                                             </li>
-                                            <li class='nav-item' style="display: inline-block;">
+                                            <li class='nav-item' style="display: inline-block; padding-top: 7px; font-size: 14px; ">
                                                 <form action="" id="form-search" onkeydown="enter()">
-                                                    <input type="text" id="search" value="">
-                                                    <button class="submit" value="submit"><i class="fas fa-search"  onclick="search()"></i></button>
+                                                    <input type="text" id="search" value="" style="width: 200px; border-radius: 5px;">
+                                                    <button class="submit" value="submit" style="border-radius: 8px;"><i class="fas fa-search"  onclick="search()"></i></button>
                                                 </form>
                                             </li>
                                         </ul>
@@ -95,6 +94,7 @@
         </div>
     </section>
     <section>
+    <section>
         <div class="container">
             <div class="row" style="height: 160px;">
                 <div class="col-12">
@@ -104,30 +104,51 @@
         </div>
         <section id="regist">
             <div class="container">
+                <div class="row" style="display: none;" id="usernameWarning">
+                    <div class="col-5">
+                        <p style=" background-color: rgb(240, 62, 62); color: white;">Istifadeci adinin uzunlugu 4 simvoldan boyuk 15 simvoldan kicik olmalidir</p>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-5">
                         <h3>Istifadeci adi</h3>
-                        <input type="text" class="username">
+                        <input type="text" class="username" id="username">
+                    </div>
+                </div>
+                <div class="row" style="display: none;" id="paswordRow">
+                    <div class="col-5" style="display: none;" id="paswordWarning">
+                        <p style=" background-color: rgb(240, 62, 62); color: white;">Sifrenin uzunlugu 5 simvoldan boyuk 15 simvoldan kicik olmalidir</p>
+                    </div>
+                    <div class="col-5" style="display: none;" id="repaswordWarning">
+                        <p style=" background-color: rgb(240, 62, 62); color: white; height: 50px;">Sifre Sifre(Tekrar)`a beraber olmalidir</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-5">
                         <h3>Sifre</h3>
-                        <input type="password" class="username">
+                        <input type="password" class="username" id="pasword">
                     </div>
                     <div class="col-5">
                         <h3>Sifre(Tekrar)</h3>
-                        <input type="password" class="username">
+                        <input type="password" class="username" id="repasword">
+                    </div>
+                </div>
+                <div class="row" style="display: none;" id="nameRow">
+                    <div class="col-4" id="nameWarning" style="display: none;">
+                        <p style=" background-color: rgb(240, 62, 62); color: white; height: 100%;">Adin uzunlugu 2 simvoldan boyuk 20 simvoldan kicik olmalidir.</p>
+                    </div>
+                    <div class="col-5 offset-1" style="display: none;" id="surnameWarning">
+                        <p style=" background-color: rgb(240, 62, 62); color: white;">Soyadin uzunlugu 2 simvoldan boyuk 20 simvoldan kicik olmalidir.</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-5">
                         <h3>Ad</h3>
-                        <input type="text" class="username">
+                        <input type="text" class="username" id="name">
                     </div>
                     <div class="col-5">
                         <h3>Soyad</h3>
-                        <input type="text" class="username">
+                        <input type="text" class="username" id="surname">
                     </div>
                 </div>
                 <div class="row">
@@ -153,9 +174,9 @@
                         <input type="tel" class="username" placeholder="0**-***-**-**" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" id="regist-warning" style="display: none;">
                     <div class="col-12">
-                        <h1 style="background-color: tomato; width: 900px; display: none;" id="regist-warning">Butun xanalar dondurulmalidir</h1>
+                        <h1 style=" background-color: rgb(240, 62, 62); color: white; width: 900px; " id="regist-warning">Butun xanalar dondurulmalidir</h1>
                     </div>
                 </div>
                 <div class="row">
@@ -175,35 +196,48 @@
             </div>
         </div>
         <div class="container">
-            <div class="row" style="height: 30px;">
-                <div class="col-12">Giris</div>
+            <div class="row" style="height: 60px; margin-top: 0px;">
+                <div class="col-2 offset-5" style="margin-bottom: 20px;"><h1 style="font-weight: bold; font-size: 40px;">Giris</h1></div>
+            </div>
+            <div class="row" style="display: none;" id="signInRow">
+                <div class="col-6" id="signNameWarning" style="display: none;">
+                    <p style=" color:#D15E5E; height: 100%;"><small>Istifadeci adinin uzunlugu 4 simvoldan boyuk 15 simvoldan kicik olmalidir.</small></p>
+                </div>
+                <div class="col-5" style="display: none;" id="signPaswordWarning">
+                    <p style=" color: #D15E5E;"><small>Sifrenin uzunlugu 5 simvoldan boyuk 15 simvoldan kicik olmalidir</small></p>
+                </div>
             </div>
             <div class="row" >
                 <div class="col-6" >
-                    <h3>istifedeci adi</h3>
-                    <input type="text" class="sign-input">
+                    <p class="mx-4" style="font-size: 20px; font-weight: bold;">Istifedeci adi</p>
+                    <input type="text" style="height: 35px;" class="sign-input mx-4" id="signusername">
                 </div>
                 <div class="col-6" >
-                    <h3>Sifre</h3>
-                    <input type="password" class="sign-input">
+                    <p class="mx-4" style="font-size: 20px; font-weight: bold;">Sifre</p>
+                    <input type="password" style="height: 35px;" class="sign-input mx-4" id="signpasword">
                 </div>
             </div>
-            <div class="row" style="height: 25px;">
-                <div class="col-12">
+            <div class="row" style="height: 40px;">
+                <div class="col-12 mt-2 mx-4">
                     <a href="file:///C:/Users/Admin/Desktop/pragmatech/layihe/losepasword.html" class="sifre-berpa-link">Sifreni itiribsen?</a>
+                </div>
+            </div>
+            <div class="row" style="height: 40px; display: none;" id="signInWarning">
+                <div class="col-8">
+                    <p style=" color: #D15E5E; height: 100%;"><small>Butun xanalar doldurulmalidir</small></p>
                 </div>
             </div>
             <div class="row" style="height: 50px;">
                 <div class="col-12">
-                    <button type="submit" class="btn-giris">Giris</button>
+                    <button type="submit" class="btn-giris  mt-2" style="margin-left: 40px;" onclick="signIn()">Giris</button>
                 </div>
             </div>
-            <div class="row" style="height: 30px;">
-                <div class="col-12">Hesabiniz yoxdur?</div>
+            <div class="row" style="height: 40px;">
+                <div class="col-12 mt-2 mx-4" style="font-size: 25px; font-weight: bold;">Hesabiniz yoxdur?</div>
             </div>
             <div class="row">
-                <div class="col-12">
-                    <p>Yeni hesab yaradin</p>
+                <div class="col-12" style="text-align: center;">
+                    <p style="font-size: 17px;">Yeni hesab yaradin</p>
                     <a href="file:///C:/Users/Admin/Desktop/pragmatech/layihe/qeydiyyat.html"><button class="btn-giris">Qeydiyyat</button></a>
                 </div>
             </div>

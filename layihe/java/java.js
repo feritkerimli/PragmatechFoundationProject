@@ -126,8 +126,65 @@ function create(){
       regist_cost.push(username[i].value)
     }
   }
+  //username symbol barier
+  var usernameCost=document.getElementById("username").value;
+  if(usernameCost.length<5 || usernameCost.length>14){
+    document.getElementById("usernameWarning").style.display="block"
+  }
+  //pasword symbol barier
+  var paswordCost=document.getElementById("pasword").value;
+  if(paswordCost.length<6 || paswordCost.length>14){
+    document.getElementById("paswordWarning").style.display="inline-block";
+    document.getElementById("paswordRow").style.display="block";
+  }
+  //pasword==repasword
+  var repaswordCost=document.getElementById("repasword").value;
+  if(paswordCost!=repaswordCost){
+    document.getElementById("repaswordWarning").style.display="inline-block";
+    document.getElementById("paswordRow").style.display="block";
+  }
+  //name symbol barier
+  var nameCost=document.getElementById("name").value;
+  if(nameCost.length<3 || nameCost.length>19){
+    document.getElementById("nameWarning").style.display="inline-block";
+    document.getElementById("nameRow").style.display="block";
+  }
+  //surname symbol barier 
+  var surnameCost=document.getElementById("surname").value;
+  if(surnameCost.length<3 || surnameCost.length>19){
+    document.getElementById("surnameWarning").style.display="inline-block";
+    document.getElementById("nameRow").style.display="block";
+  }
+  //xanalarin hamisi yazilmadiqda
   if(regist_cost.length!=8){
     document.getElementById("regist-warning").style.display="block";
+  }
+
+}
+
+
+function signIn(){
+  var username=document.querySelectorAll(".sign-input");
+  var sign_cost=[]
+  for(var i=0;i<username.length;i++){
+    if(username[i].value!=""){
+      regist_cost.push(username[i].value)
+    }
+  }
+  //username symbol barier
+  var signusernameCost=document.getElementById("signusername").value;
+  if(signusernameCost.length<5 || signusernameCost.length>14){
+    document.getElementById("signNameWarning").style.display="inline-block";
+    document.getElementById("signInRow").style.display="block";
+  }
+  var signpaswordCost=document.getElementById("signpasword").value;
+  if(signpaswordCost.length<5 || signpaswordCost.length>14){
+    document.getElementById("signPaswordWarning").style.display="inline-block";
+    document.getElementById("signInRow").style.display="block";
+  }
+
+  if(sign_cost.length!=2){
+    document.getElementById("signInWarning").style.display="block";
   }
 }
 

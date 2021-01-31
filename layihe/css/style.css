@@ -153,30 +153,30 @@ body #sign .container:nth-of-type(2) .row:nth-of-type(1) .col-12 {
   font-size: 20px;
 }
 
-body #sign .container:nth-of-type(2) .row:nth-of-type(2) .col-6 {
+body #sign .container:nth-of-type(2) .row:nth-of-type(3) .col-6 {
   text-align: start;
 }
 
-body #sign .container:nth-of-type(2) .row:nth-of-type(2) .col-6 .sign-input {
+body #sign .container:nth-of-type(2) .row:nth-of-type(3) .col-6 .sign-input {
   height: 30px;
   width: 80%;
 }
 
-body #sign .container:nth-of-type(2) .row:nth-of-type(3) .col-12 .sifre-berpa-link {
+body #sign .container:nth-of-type(2) .row:nth-of-type(4) .col-12 .sifre-berpa-link {
   color: #39c9ba;
   font-size: 17px;
 }
 
-body #sign .container:nth-of-type(2) .row:nth-of-type(4) .col-12 {
+body #sign .container:nth-of-type(2) .row:nth-of-type(5) .col-12 {
   text-align: center;
 }
 
-body #sign .container:nth-of-type(2) .row:nth-of-type(5) .col-12 {
+body #sign .container:nth-of-type(2) .row:nth-of-type(6) .col-12 {
   font-size: 20px;
   font-weight: bold;
 }
 
-body #sign .container:nth-of-type(2) .row:nth-of-type(6) .col-12 {
+body #sign .container:nth-of-type(2) .row:nth-of-type(8) .col-12 {
   text-align: center;
 }
 
