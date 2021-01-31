@@ -162,7 +162,7 @@ body{
                     }        
                 }
             }
-            .row:nth-of-type(4){
+            .row:nth-of-type(5){
                 .col-12{
                     .sifre-berpa-link{
                         color: rgb(57, 201, 186);
@@ -258,4 +258,12 @@ p{
     color: black;
 }
 
+.btn-losePasword{
+    border: transparent;
+    border-bottom: 5px solid #65b4ad;
+    background-color: #72d5cd;
+    color: white;
+    width: 15%;
+    height: 40px;
+}
 }

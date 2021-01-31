@@ -188,4 +188,22 @@ function signIn(){
   }
 }
 
+function losePasword(){
+  var losePasword=document.getElementById("losePasword").value;
+  if(losePasword==""){
+    document.getElementById("losePaswordWarning").style.display="block";
+  }
+}
+//test bolmesine onmouseover edende
+function testOpen(){
+  var test=document.getElementById("dropdown-menu");
+  test.style.display="block";
+}
+// test bolmesine onmouseout edende
+function testClose(){
+  var test=document.getElementById("dropdown-menu");
+  test.style.display="none";
+}
+
+
 
