@@ -69,43 +69,88 @@ function Yoxla_sual(){
   var _duz2=document.formTest.q2.value;
   var _duz3=document.formTest.q3.value;
   var correct=0;
+  var empty=0;
+  var wrong=0;
+  var duz1_cost=document.getElementById("label_duz1").innerHTML;
+  var duz2_cost=document.getElementById("label_duz2").innerHTML;
+  var duz3_cost=document.getElementById("label_duz3").innerHTML;
+  // question 1
   if(_duz1=="duz"){
     correct+=1;
     document.getElementById("sual1").innerHTML="Duzgun";
+    document.getElementById("true_icon_1").style.display="inline-block";
   }
   else if(_duz1==""){
-    document.getElementById("sual1").innerHTML="Cavablandirilmayib";
+    empty+=1;
+    document.getElementById("sual1").innerHTML=`Cavablandirilmayib &nbsp; Duzgun cavab: ${duz1_cost}`;
     document.getElementById("label_duz1").style.color="green";
   }
-  else{
-    document.getElementById("sual1").innerHTML="Sehv";
+  else if(_duz1=="A"){
+    wrong+=1;
+    document.getElementById("sual1").innerHTML=`Sehv &nbsp; Duzgun cavab: ${duz1_cost}`;
     document.getElementById("label_duz1").style.color="green";
+    document.getElementById("a1").style.display="inline-block";
 
   }
+  else if(_duz1=="B"){
+    wrong+=1;
+    document.getElementById("sual1").innerHTML=`Sehv &nbsp; Duzgun cavab: ${duz1_cost}`;
+    document.getElementById("label_duz1").style.color="green";
+    document.getElementById("b1").style.display="inline-block";
+
+  }
+  // question 2
   if(_duz2=="duz"){
     correct+=1;
     document.getElementById("sual2").innerHTML="Duzgun";
+    document.getElementById("true_icon_2").style.display="inline-block";
   }
   else if(_duz2==""){
-    document.getElementById("sual2").innerHTML="Cavablandirilmayib";
+    empty+=1;
+    document.getElementById("sual2").innerHTML=`Cavablandirilmayib &nbsp; Duzgun cavab: ${duz2_cost}`;
     document.getElementById("label_duz2").style.color="green";
   }
-  else{
-    document.getElementById("sual2").innerHTML="Sehv";
+  else if(_duz2=="A"){
+    wrong+=1;
+    document.getElementById("sual2").innerHTML=`Sehv &nbsp; Duzgun cavab: ${duz2_cost}`;
     document.getElementById("label_duz2").style.color="green";
+    document.getElementById("a2").style.display="inline-block";
+
   }
+  else if(_duz2=="B"){
+    wrong+=1;
+    document.getElementById("sual2").innerHTML=`Sehv &nbsp; Duzgun cavab: ${duz2_cost}`;
+    document.getElementById("label_duz2").style.color="green";
+    document.getElementById("b2").style.display="inline-block";
+
+  }
+  // question 3
   if(_duz3=="duz"){
     correct+=1;
     document.getElementById("sual3").innerHTML="Duzgun";
+    document.getElementById("true_icon_3").style.display="inline-block";
   }
   else if(_duz3==""){
-    document.getElementById("sual3").innerHTML="Cavablandirilmayib";
+    empty+=1;
+    document.getElementById("sual3").innerHTML=`Cavablandirilmayib  &nbsp; Duzgun cavab: ${duz3_cost}`;
     document.getElementById("label_duz3").style.color="green";
   }
-  else{
-    document.getElementById("sual3").innerHTML="Sehv";
+  else if(_duz3=="A"){
+    wrong+=1;
+    document.getElementById("sual3").innerHTML=`Sehv &nbsp; Duzgun cavab: ${duz3_cost}`;
     document.getElementById("label_duz3").style.color="green";
+    document.getElementById("a3").style.display="inline-block";
+
   }
+  else if(_duz3=="B"){
+    wrong+=1;
+    document.getElementById("sual3").innerHTML=`Sehv &nbsp; Duzgun cavab: ${duz3_cost}`;
+    document.getElementById("label_duz3").style.color="green";
+    document.getElementById("b3").style.display="inline-block";
+
+  }
+  document.getElementById("quiz-table").style.display="block";
+  // corectlerin sayi
   if(correct==1){
     document.getElementById("say_duz").innerHTML="1";
   }
@@ -114,6 +159,27 @@ function Yoxla_sual(){
   }
   else if(correct==3){
     document.getElementById("say_duz").innerHTML="3";
+  }
+  //sehvlerin sayi
+  if(wrong==1){
+    document.getElementById("say_sehv").innerHTML="1";
+  }
+  else if(wrong==2){
+    document.getElementById("say_sehv").innerHTML="2";
+  }
+  else if(correct==3){
+    wrong.getElementById("say_sehv").innerHTML="3";
+  }
+
+  // cavablandirilmayanlarin sayi
+  if(empty==1){
+    document.getElementById("say_empty").innerHTML="1";
+  }
+  else if(empty==2){
+    document.getElementById("say_empty").innerHTML="2";
+  }
+  else if(empty==3){
+    document.getElementById("say_empty").innerHTML="3";
   }
   
 }
@@ -168,24 +234,24 @@ function signIn(){
   var sign_cost=[]
   for(var i=0;i<username.length;i++){
     if(username[i].value!=""){
-      regist_cost.push(username[i].value)
+      sign_cost.push(username[i].value)
     }
   }
   //username symbol barier
   var signusernameCost=document.getElementById("signusername").value;
+  var signpaswordCost=document.getElementById("signpasword").value;
+  if(sign_cost.length!=2){
+    document.getElementById("signInWarning").style.display="block";
+  }
   if(signusernameCost.length<5 || signusernameCost.length>14){
     document.getElementById("signNameWarning").style.display="inline-block";
     document.getElementById("signInRow").style.display="block";
   }
-  var signpaswordCost=document.getElementById("signpasword").value;
   if(signpaswordCost.length<5 || signpaswordCost.length>14){
     document.getElementById("signPaswordWarning").style.display="inline-block";
     document.getElementById("signInRow").style.display="block";
   }
 
-  if(sign_cost.length!=2){
-    document.getElementById("signInWarning").style.display="block";
-  }
 }
 
 function losePasword(){
@@ -204,6 +270,7 @@ function testClose(){
   var test=document.getElementById("dropdown-menu");
   test.style.display="none";
 }
+
 
 
 

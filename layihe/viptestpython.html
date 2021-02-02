@@ -107,48 +107,64 @@
                     <div class="col-7">
                         <h1>V.I.P/TEST</h1>
                         <h1>Basic suallar</h1>
-                        <div class="say-test">
-                            <nav>
-                                <p id="say_duz">0</p>
-                                <p id="say_umumi">/3</p>
-                            </nav>
+                        <div class="container mt-3 mb-4" id="quiz-table" style="display: none;">
+                            <table class="table" style="width:400px">
+                                <tbody> 
+                                    <tr>
+                                    <td>Umumi</td>
+                                    <td>3</td>
+                                  </tr>
+                                  <tr class="success" style="background-color: #dff0d8;">
+                                    <td>Duzgun</td>
+                                    <td id="say_duz">0</td>
+                                  </tr>
+                                  <tr class="danger" style="background-color: #f2dede;">
+                                    <td>Sehv</td>
+                                    <td id="say_sehv">0</td>
+                                  </tr>
+                                  <tr class="info" style="background-color: #d9edf7;">
+                                    <td>Cavablandirilmayib</td>
+                                    <td id="say_empty">0</td>
+                                  </tr>
+                                </tbody>
+                              </table>
                         </div>
                         <form name="formTest">
-                            <fieldset class="radiogroup">
-                            <legend><b>1</b>.Sətirin həm başlanğıcındakı həm də sonundakı boşluqları aradan qaldırmaq üçün hansi metoddan istifadə edilə bilər?</legend>
-                             <ul class="radio" style="list-style:none">
-                              <li><input type="radio" name="q1" value="A" />&nbsp;<label>trim()</label></li>
-                              <li><input type="radio" name="q1" value="B" />&nbsp;<label>ptrim()</label></li>
-                              <li><input type="radio" name="q1" value="duz" />&nbsp;<label id="label_duz1">strip()</label></li>
-                             </ul>
+                            <fieldset class="radiogroup px-3 pb-5 pt-2 mt-2">
+                            <legend id="sual"><b>1</b>.Sətirin həm başlanğıcındakı həm də sonundakı boşluqları aradan qaldırmaq üçün hansi metoddan istifadə edilə bilər?</legend>
+                             <ul class="radio" style="list-style:none;">
+                              <li><input type="radio" name="q1" value="A" />&nbsp;&nbsp;<label>ptrim()</label>&nbsp;&nbsp;<label id="a1" style="color: red; display: none;"><i class="fas fa-times"></i></label></li>
+                              <li><input type="radio" name="q1" value="B" />&nbsp;&nbsp;<label>strip()</label>&nbsp;&nbsp;<label id="b1" style="color: red; display: none;"><i class="fas fa-times"></i></label></li>
+                              <li><input type="radio" name="q1" value="duz" />&nbsp;&nbsp;<label id="label_duz1">trim()</label>&nbsp;&nbsp;<label id="true_icon_1" style="color:green; display: none;"><i class="fas fa-check"></i></label></li>
+                            </ul>
                              <p id="sual1"></p>
                             </fieldset>
                             
-                            <fieldset class="radiogroup">
-                            <legend><b>2</b>.Hansı kolleksiya üzvlərin təkrarlanmasına icazə vermir?</legend>
+                            <fieldset class="radiogroup px-3 pb-5 pt-2 mt-2">
+                            <legend id="sual" style="font-size: 17px;"><b>2</b>.Hansı kolleksiya üzvlərin təkrarlanmasına icazə vermir?</legend>
                              <ul class="radio" style="list-style:none">
-                              <li><input type="radio" name="q2" value="A" />&nbsp;<label>List</label></li>
-                              <li><input type="radio" name="q2" value="B" />&nbsp;<label>Tuple</label></li>
-                              <li><input type="radio" name="q2" value="duz" />&nbsp;<label id="label_duz2">Set</label></li>
+                              <li><input type="radio" name="q2" value="A" />&nbsp;&nbsp;<label>List</label>&nbsp;&nbsp;<label id="a2" style="color: red; display: none;"><i class="fas fa-times"></i></label></li>
+                              <li><input type="radio" name="q2" value="B" />&nbsp;&nbsp;<label>Tuple</label>&nbsp;&nbsp;<label id="b2" style="color: red; display: none;"><i class="fas fa-times"></i></label></li>
+                              <li><input type="radio" name="q2" value="duz" />&nbsp;&nbsp;<label id="label_duz2">Set</label>&nbsp;&nbsp;<label id="true_icon_2" style="color:green; display: none;"><i class="fas fa-check"></i></label></li>
                              </ul>
                              <p id="sual2"></p>
                             </fieldset> 
                             
-                            <fieldset class="radiogroup">
-                            <legend><b>3</b>Bu kolleksiyalardan hansı TUPLE-i müəyyənləşdirir?</legend>
+                            <fieldset class="radiogroup px-3 pb-5 pt-2 mt-2" >
+                            <legend id="sual"><b>3</b>.Bu kolleksiyalardan hansı TUPLE-i müəyyənləşdirir?</legend>
                              <ul class="radio" style="list-style:none">
-                              <li><input type="radio" name="q3" value="A" />&nbsp;<label>{"ad": "alma", "rəng": "yaşıl"}</label></li>
-                              <li><input type="radio" name="q3" value=duz />&nbsp;<label id="label_duz3">("alma", "banan", "albalı")</label></li>
-                              <li><input type="radio" name="q3" value="B" />&nbsp;<label>["alma", "banan", "albalı"]</label></li>
+                              <li><input type="radio" name="q3" value="A" />&nbsp;&nbsp;<label>{"ad": "alma", "rəng": "yaşıl"}</label>&nbsp;&nbsp;<label id="a3" style="color: red; display: none;"><i class="fas fa-times"></i></label></li>
+                              <li><input type="radio" name="q3" value=duz />&nbsp;&nbsp;<label id="label_duz3">("alma", "banan", "albalı")</label>&nbsp;&nbsp;<label id="true_icon_3" style="color:green; display: none;"><i class="fas fa-check"></i></label></li>
+                              <li><input type="radio" name="q3" value="B" />&nbsp;&nbsp;<label>["alma", "banan", "albalı"]</label>&nbsp;&nbsp;<label id="b3" style="color: red; display: none;"><i class="fas fa-times"></i></label></li>
                              </ul>
                              <p id="sual3"></p>
                             </fieldset> 
                             <button type="button" value="Yoxla" onclick="Yoxla_sual()" id="Yoxla" class="yoxla" style="width: 150px; margin: 10px 0px;">Yoxla</button>
-                        </form>
-                        <div>
-                            <textarea name="serh" id="serh" cols="100" rows="10"></textarea>
-                            <button id="serh_btn" class="yoxla" style="width: 150px; margin: 10px 0px;">Serh elave et</button>
-                        </div>
+                            </form>
+                            <div>
+                                <textarea name="serh" id="serh" cols="100" rows="10"></textarea>
+                                <button id="serh_btn" class="yoxla" style="width: 150px; margin: 10px 0px;">Serh elave et</button>
+                            </div>
                     </div>
                     <div class="col-4" style="padding: 20px;">
                         <h3>Testler</h3>

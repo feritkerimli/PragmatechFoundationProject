@@ -106,40 +106,56 @@
                 <div class="row">
                     <div class="col-7">
                         <h1>V.I.P/TEST</h1>
-                        <h1>Natural ədədlər</h1>
-                        <div class="say-test">
-                            <nav>
-                                <p id="say_duz">0</p>
-                                <p id="say_umumi">/3</p>
-                            </nav>
+                        <h1>Natural ededler</h1>
+                        <div class="container mt-3 mb-4" id="quiz-table" style="display: none;">
+                            <table class="table" style="width:400px">
+                                <tbody> 
+                                    <tr>
+                                    <td>Umumi</td>
+                                    <td>3</td>
+                                  </tr>
+                                  <tr class="success" style="background-color: #dff0d8;">
+                                    <td>Duzgun</td>
+                                    <td id="say_duz">0</td>
+                                  </tr>
+                                  <tr class="danger" style="background-color: #f2dede;">
+                                    <td>Sehv</td>
+                                    <td id="say_sehv">0</td>
+                                  </tr>
+                                  <tr class="info" style="background-color: #d9edf7;">
+                                    <td>Cavablandirilmayib</td>
+                                    <td id="say_empty">0</td>
+                                  </tr>
+                                </tbody>
+                              </table>
                         </div>
                         <form name="formTest">
-                            <fieldset class="radiogroup">
-                            <legend><b>1</b>.7n + 7 və 8n + 2 ardıcıl cüt ədədlər olarsa,n-in ala biləcəyi qiymətlərin cəmini tap.</legend>
-                             <ul class="radio" style="list-style:none">
-                              <li><input type="radio" name="q1" value="duz" />&nbsp;<label id="label_duz1">6</label></li>
-                              <li><input type="radio" name="q1" value="A" />&nbsp;<label>4</label></li>
-                              <li><input type="radio" name="q1" value="B" />&nbsp;<label>8</label></li>
+                            <fieldset class="radiogroup px-3 pb-5 pt-2 mt-2">
+                            <legend id="sual"><b>1</b>.7n + 7 və 8n + 2 ardıcıl cüt ədədlər olarsa,n-in ala biləcəyi qiymətlərin cəmini tap.</legend>
+                             <ul class="radio" style="list-style:none;">
+                              <li><input type="radio" name="q1" value="duz" />&nbsp;&nbsp;<label id="label_duz1">6</label>&nbsp;&nbsp;<label id="true_icon_1" style="color:green; display: none;"><i class="fas fa-check"></i></label></li>
+                              <li><input type="radio" name="q1" value="A" />&nbsp;&nbsp;<label>4</label>&nbsp;&nbsp;<label id="a1" style="color: red; display: none;"><i class="fas fa-times"></i></label></li>
+                              <li><input type="radio" name="q1" value="B" />&nbsp;&nbsp;<label>8</label>&nbsp;&nbsp;<label id="b1" style="color: red; display: none;"><i class="fas fa-times"></i></label></li>
                              </ul>
                              <p id="sual1"></p>
                             </fieldset>
                             
-                            <fieldset class="radiogroup">
-                            <legend><b>2</b>.İkirəqəmli ədədin təkliklərinin sayı onluqlarının sayından 2 vahid böyükdür.Bu ikirəqəmli ədədin,onun rəqəmləri cəminə hasili 144 olarsa,bu ədədi tapın.</legend>
+                            <fieldset class="radiogroup px-3 pb-5 pt-2 mt-2">
+                            <legend id="sual" style="font-size: 17px;"><b>2</b>.İkirəqəmli ədədin təkliklərinin sayı onluqlarının sayından 2 vahid böyükdür.Bu ikirəqəmli ədədin,onun rəqəmləri cəminə hasili 144 olarsa,bu ədədi tapın.</legend>
                              <ul class="radio" style="list-style:none">
-                              <li><input type="radio" name="q2" value="duz" />&nbsp;<label id="label_duz2">39</label></li>
-                              <li><input type="radio" name="q2" value="A" />&nbsp;<label>68</label></li>
-                              <li><input type="radio" name="q2" value="B" />&nbsp;<label>24</label></li>
+                              <li><input type="radio" name="q2" value="A" />&nbsp;&nbsp;<label>24</label>&nbsp;&nbsp;<label id="a2" style="color: red; display: none;"><i class="fas fa-times"></i></label></li>
+                              <li><input type="radio" name="q2" value="B" />&nbsp;&nbsp;<label>68</label>&nbsp;&nbsp;<label id="b2" style="color: red; display: none;"><i class="fas fa-times"></i></label></li>
+                              <li><input type="radio" name="q2" value="duz" />&nbsp;&nbsp;<label id="label_duz2">39</label>&nbsp;&nbsp;<label id="true_icon_2" style="color:green; display: none;"><i class="fas fa-check"></i></label></li>
                              </ul>
                              <p id="sual2"></p>
                             </fieldset> 
                             
-                            <fieldset class="radiogroup">
-                            <legend><b>3</b>.30-dan böyük olmayan ikirəqəmli ədədlər içərisində 30-la qarşılıqlı sadə olan neçə natural ədəd var?</legend>
+                            <fieldset class="radiogroup px-3 pb-5 pt-2 mt-2" >
+                            <legend id="sual"><b>3</b>.30-dan böyük olmayan ikirəqəmli ədədlər içərisində 30-la qarşılıqlı sadə olan neçə natural ədəd var?</legend>
                              <ul class="radio" style="list-style:none">
-                              <li><input type="radio" name="q3" value="A" />&nbsp;<label>5</label></li>
-                              <li><input type="radio" name="q3" value=duz />&nbsp;<label id="label_duz3">4</label></li>
-                              <li><input type="radio" name="q3" value="B" />&nbsp;<label>10</label></li>
+                              <li><input type="radio" name="q3" value="A" />&nbsp;&nbsp;<label>5</label>&nbsp;&nbsp;<label id="a3" style="color: red; display: none;"><i class="fas fa-times"></i></label></li>
+                              <li><input type="radio" name="q3" value=duz />&nbsp;&nbsp;<label id="label_duz3">4</label>&nbsp;&nbsp;<label id="true_icon_3" style="color:green; display: none;"><i class="fas fa-check"></i></label></li>
+                              <li><input type="radio" name="q3" value="B" />&nbsp;&nbsp;<label>10</label>&nbsp;&nbsp;<label id="b3" style="color: red; display: none;"><i class="fas fa-times"></i></label></li>
                              </ul>
                              <p id="sual3"></p>
                             </fieldset> 

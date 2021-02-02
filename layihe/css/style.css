@@ -270,4 +270,19 @@ body .btn-losePasword {
   width: 15%;
   height: 40px;
 }
+
+body .radiogroup {
+  background-color: #d9edf7;
+  border-color: #bcdff1;
+  color: #31708f;
+}
+
+body .radiogroup #sual {
+  font-size: 17px;
+}
+
+body .radiogroup .radio {
+  position: relative;
+  left: -30px;
+}
 /*# sourceMappingURL=style.css.map */
