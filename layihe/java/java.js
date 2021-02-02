@@ -181,6 +181,13 @@ function Yoxla_sual(){
   else if(empty==3){
     document.getElementById("say_empty").innerHTML="3";
   }
+
+  var beforesubmit=document.querySelectorAll(".radiogroup")
+  for(var i=0;beforesubmit.length;i++){
+    beforesubmit[i].setAttribute("disabled","false")
+  }
+
+
   
 }
 
