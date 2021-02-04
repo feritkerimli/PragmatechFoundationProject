@@ -1,3 +1,7 @@
+body {
+  font-family: averta std !important;
+}
+
 body .container:nth-of-type(3) .row .col-12 {
   position: relative;
 }
@@ -29,8 +33,14 @@ body .container-btn {
   box-shadow: inset 0 0 5px grey;
 }
 
+body #icon {
+  color: #3e3e3e;
+}
+
 body #icon:hover {
-  font-size: 150%;
+  *transition: all .7s linear;
+  color: #10bcd3;
+  font-size: 105%;
 }
 
 body .btn {
@@ -92,15 +102,19 @@ body #regist .container .row {
   height: 100px;
 }
 
-body #regist .container .row .col-5 .username {
+body #regist .container .row .col-6 {
+  height: 50px;
+}
+
+body #regist .container .row .col-6 .username {
   width: 100%;
-  height: 30px;
+  height: 50px;
   font-size: 16px;
 }
 
-body #regist .container .row .col-5 #cins {
+body #regist .container .row .col-6 #cins {
   width: 100%;
-  height: 30px;
+  height: 50px;
   font-size: 16px;
 }
 
