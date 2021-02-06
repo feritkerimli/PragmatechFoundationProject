@@ -11,56 +11,56 @@ function search(){
 
  var element=document.getElementById("search").value;
   if((element=="Python") || (element=="python")){
-    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/pyhton.html"
+    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/html/pyhton.html"
   }
   else if(element=="Ana sehife" || element=="ana sehife"){
-    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/anasehife.html"
+    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/html/anasehife.html"
   }
   else if(element=="Riyaziyyat" || element=="riyaziyyat"){
-    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/riyaziyyat.html"
+    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/html/riyaziyyat.html"
   }
   else if(element=="Haqqinda" || element=="haqqinda"){
-    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/haqqinda.html"
+    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/html/haqqinda.html"
   }
   else if(element=="Uzvuluk" || element=="uzvuluk"){
-    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/uzvuluk.html"
+    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/html/uzvuluk.html"
   }
   else if(element=="Qeydiyyat" || element=="qeydiyyat"){
-    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/qeydiyyat.html"
+    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/html/qeydiyyat.html"
   }
   else if(element=="V.I.P/Python" || element=="v.i.p/python" || element=="vip python"){
-    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/viptestpython.html"
+    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/html/viptestpython.html"
   }
   else if(element=="V.I.P/Riyaziyyat" || element=="v.i.p/riyaziyyat" || element=="vip riyaziyyat"){
-    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/viptestriyaziyyat.html"
+    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/html/viptestriyaziyyat.html"
   }
 }
 
 function enter(){
   var element=document.getElementById("search").value;
   if((element=="Python") || (element=="python")){
-    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/pyhton.html"
+    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/html/pyhton.html"
   }
   else if(element=="Ana sehife" || element=="ana sehife"){
-    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/anasehife.html"
+    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/html/anasehife.html"
   }
   else if(element=="Riyaziyyat" || element=="riyaziyyat"){
-    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/riyaziyyat.html"
+    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/html/riyaziyyat.html"
   }
   else if(element=="Haqqinda" || element=="haqqinda"){
-    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/haqqinda.html"
+    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/html/haqqinda.html"
   }
   else if(element=="Uzvuluk" || element=="uzvuluk"){
-    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/uzvuluk.html"
+    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/html/uzvuluk.html"
   }
   else if(element=="Qeydiyyat" || element=="qeydiyyat"){
-    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/qeydiyyat.html"
+    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/html/qeydiyyat.html"
   }
   else if(element=="V.I.P/Python" || element=="v.i.p/python" || element=="vip python"){
-    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/viptestpython.html"
+    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/html/viptestpython.html"
   }
   else if(element=="V.I.P/Riyaziyyat" || element=="v.i.p/riyaziyyat" || element=="vip riyaziyyat"){
-    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/viptestriyaziyyat.html"
+    document.getElementById("form-search").action="file:///C:/Users/Admin/Desktop/pragmatech/layihe/html/viptestriyaziyyat.html"
   }
 }
 
