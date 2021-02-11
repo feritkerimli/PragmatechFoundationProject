@@ -277,7 +277,19 @@ function testClose(){
   var test=document.getElementById("dropdown-menu");
   test.style.display="none";
 }
+var profil_cost=false;
+function profil(){
+  if(profil_cost== false){
+    document.getElementById("profil_div").style.display="block";
+    document.getElementById("profil_div").style.transition="all .6s linear";
+    profil_cost=true;
+  }
+  else if(profil_cost==true){
+    document.getElementById("profil_div").style.display="none";
+    document.getElementById("profil_div").style.transition="all .6s linear";
+    profil_cost=false;
+  }
 
-
+}
 
 
