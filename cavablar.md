@@ -1,3 +1,8 @@
+# index => value key => value ferqler
+- index => value nizamlanmis objectlerde listlerde ve s. verilmis indexdeki valueni goturmek ucun istifade olunur.
+- key => value ozunde qiymet saxlayan (deyisen,value) objectlerde dict ve s. verilmis key-e aid olan valueni goturmek  ucun istifade olunur.
+- key deyismez tipde olur str ve s. kimi
+
 # Built in methodlar her hansi bir type object ucun onceden hazirlnmis hazir funksiyalardir.
 # Her hansi bir built in methoddan istifade etmeden once bezi seyleri arasdirmaq lazimdir
     - 1. method hansi type objectler ucun nezerde tutulub
@@ -245,8 +250,8 @@ print(a)
 print(a.strip("/.,"))
 
 ## Functions
-# Void functions                                       |   # Return functions
-- Qiymet qaytarmir                                     |   - Qiymet qaytarir
+# Void functions                                               |   # Return functions
+- Qiymet qaytarmir (Valuesini deyisen kimi teyin etmek olmur)  |   - Qiymet qaytarir(Valuesini deyisene teyin etmek olur)
 
 # sade Void function
 def void():
