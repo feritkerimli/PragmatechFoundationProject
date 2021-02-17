@@ -1,0 +1,59 @@
+--Users
+CREATE TABLE Users(
+    id integer primary key,
+    username varchar(20) UNIQUE NOT NULL,
+    pasword varchar(20) NOT NULL,
+    name varchar(20) NOT NULL,
+    surname varchar(20) NOT NULL,
+    gender varchar(10) NOT NULL,
+    birthdate datetime(15) NOT NULL,
+    email varchar(50) NOT NULL,
+    phone varchar(20) NOT NULL,
+    score integer NOT NULL
+
+);
+SELECT * FROM Users;
+DROP TABLE Users;
+
+--VIP_Accounts
+CREATE TABLE VIP_Accounts(
+    id integer primary key,
+    username_id integer NOT NULL,
+    packet_name varchar(20) NOT NULL,
+    FOREIGN KEY  (username_id)
+    REFERENCES Users (id)
+
+);
+
+SELECT * FROM VIP_Accounts;
+DROP TABLE VIP_Accounts;
+
+--Tests
+CREATE TABLE Tests(
+    id integer primary key,
+    subject varchar(50) NOT NULL,
+    title varchar(50) NOT NULL,
+    correct_variant varchar(50) NOT NULL,
+    other_variant01 varchar(50) NOT NULL,
+    other_variant02 varchar(50) NOT NULL
+
+);
+
+SELECT * FROM Tests;
+DROP TABLE Tests;
+
+--Tests_costs
+CREATE TABLE Tests_Costs(
+    id integer primary key,
+    subject varchar(50) NOT NULL,
+    title_id integer,
+    score integer,
+    correct_cost integer,
+    wrong_cost  integer,
+    notanswered_cost integer,
+    FOREIGN KEY (title_id)
+    REFERENCES Tests (id)
+
+);
+SELECT * FROM Tests_Costs;
+DROP TABLE Tests_Costs;
