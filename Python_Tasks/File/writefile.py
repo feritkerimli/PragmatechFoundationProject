@@ -1,4 +1,4 @@
-con=open('python.txt','a')
+con=open('Python_Tasks/File/python.txt','a')
 print("App`i dayandirmaq ucun : exit yazin")
 while True:
     a= input("Melumat elave edin:")
