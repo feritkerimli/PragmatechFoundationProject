@@ -88,4 +88,209 @@
 - global deyisen butun kodda isleyir
 - meselen funksiyanin icinde deyisen teyin etsek sadece o funksiya icinde isleyecek
 - deyiseni global etmek ucun  global x ; x= 5 istifade olunur
+## Python type conversion haqqında izahat verin
+- Iki yere ayrilir: Auto conversion ve manual conversion: type(ifade)
+- Auto conversion: x=5 ; y= 4.6 ; x+y => 9.6 olur x => int y => float x+y => float olur
+- Manual conversion: x=5 ; y= 4.6 ; int(x+y) => 9 olur 
+## init nədir?
+- init konstruktordur
+- objecte baslangic qiymetlerin verilmesi ve ilkin emeliyyatlarin aparilmasi ucun istifade olunur
+## self nədir?
+- self gosterilen deyisenin hansi objecte aid oldugunu teyin edir yeni deyiseni objectle baglayir.
+## *args,*kwargs nədir? nə zaman istifadə olunur?
+- Funksiyaya melum olmayan sayda acar sozsuz(deyisensiz) argument oturulecekse * lu argumentlerden *args
+- melum olmayan sayda acar sozlu(deyisenli) argument oturulecekse ** lu argumentlerden istifade olunacaq **kwargs
+## Python module nədir?
+- Modul hansisa fayla qosulan fayldir
+- Modul boyuk applari hisselere ayirib asan idare elemeye ve hemin koddan tekrar tekrar istifade etmek ucun elverislidir
+## Python package nədir?
+- Package modlullar toplusudur
+## pass nədir? Nə zaman istifadə olunur?
+- Her hansi app in demosunu hazirlayanda yada hansisa functionu sonra yazmaq lazim geldikde hemin yeri bos buraxmaq xeta sebebi olur. Bunun qarsisini almaq ucun pass dan istifade olunur
+## List metodlarından 5 ədəd metodun izahatını yazın
+# 1. append(elem)
+- append siyahiya element ve ya element toplusu elave etmek ucun istfade olunur.
+- 1 parametr qebul edir(siyahiya elave olunacaq element ve ya element toplusu).
+- Yuxarida da gorunduyu kimi append() siyahiya bir elementle yanasi elementler toplusuda elave ede biler.
+- Gelin misallar uzerinden aydinlasdiraq...
 
+# Siyahiya tek elementin elave edilmesi
+a=["JavaScript","Python"]
+print("Listin ilkin hali:",a)
+a.append("C++")
+print("Update olunmus list",a)
+
+Neticemiz bele olacaq :
+>>> Listin ilkin hali: ['JavaScript', 'Python']
+    Update olunmus list ['JavaScript', 'Python', 'C++']
+>>>
+
+# Append methodu ile siyahiya listin elave edilmesi
+a=["JavaScript","Python"]
+b="C++"
+print("Listin ilkin hali:",a)
+a.append(b)
+print("Update olunmus list",a)
+
+Neticemiz bele olacaq :
+>>> Listin ilkin hali: ['JavaScript', 'Python']
+    Update olunmus list ['JavaScript', 'Python', 'C++']
+>>>
+
+# Siyahiya birden cox elementin elave edilmesi
+a=["JavaScript","Python"]
+b=["C++","Java"]
+print("Listin ilkin hali:",a)
+for i in b:
+    a.append(i)
+print("Update olunmus list",a)
+
+Neticemiz bele olacaq :
+>>> Listin ilkin hali: ['JavaScript', 'Python']
+    Update olunmus list ['JavaScript', 'Python', 'C++', 'Java']
+>>> 
+
+
+# Append methodu ile siyahiya birden cox elementin elave edilmesi
+a=["JavaScript","Python"]
+print("Listin ilkin hali:",a)
+b=["C++","Java"]
+a.append(b)
+print("Update olunmus list",a)
+
+Neticemiz bele olacaq :
+>>> Listin ilkin hali: ['JavaScript', 'Python']
+    Update olunmus list ['JavaScript', 'Python', ['C++', 'Java']]
+>>> 
+
+# 2. clear() method
+- clear() methodu siyahinin butun elementlerini silir(siyahini bos siyahiya cevirir)
+- clear() methodu parametr qebul etmir.
+- Gelin misallar uzerinden aydinlasdiraq...
+
+# clear() methodu ile listin elementlerinin silinmesi
+a=['Python','Java','C++']
+print("Listin ilkin hali",a)
+a.clear()
+print("Clear olunmus list",a)
+
+Neticemiz bele olacaq:
+
+>>> Listin ilkin hali ['Python', 'Java', 'C++']
+    Clear olunmus list []
+>>> 
+
+# 3. copy() methodu
+- copy() methodu siyahinin kopyalayaraq bir deyisene teyin etmek ucun istifade olunur.
+- Parametr qebul etmir
+- Gelin misallar uzerinden aydinlasdiraq...
+
+# copy() methodu ile listin koplayanmasi
+
+a=['Python','Java','C++']
+print("a Listi",a)
+b = a.copy()
+print("b Listi(copy() methodu ile yaradilmis)",b)
+
+Neticemiz bele olacaq:
+
+>>> a Listi ['Python', 'Java', 'C++']
+    b Listi(copy() methodu ile yaradilmis) ['Python', 'Java', 'C++']
+>>>
+# 4. reverse() methodu
+- reverse() methodu listi tersine cevirir yeni elementleri tesrden duzur
+- parametri yoxdur
+- Gelin misallar uzerinden aydinlasdiraq...
+
+# misal
+a=['Python','Java','C++']
+print("Listin ilkin hali:",a)
+a.reverse()
+print("reverse() methodundan sonra:",a)
+Neticemiz bele olacaq:
+>>> Listin ilkin hali: ['Python', 'Java', 'C++']
+    reverse() methodundan sonra: ['C++', 'Java', 'Python']
+>>>
+# 5. remove() methodu
+- reverse(elem) methodu listden elem-in silinmesini temin edir
+- parametri olan elem silinecek elementdir
+- Gelin misallarla aydinlasdiraq...
+# misal
+a=['Python','Java','C++']
+print("Listin ilkin hali:",a)
+a.remove("Java")
+print("remove() methodundan sonra:",a)
+Neticemiz bele olacaq:
+>>> Listin ilkin hali ['Python', 'Java', 'C++']
+    remove() methodundan sonra ['Python', 'C++']
+>>>
+
+## List və dict hansı hallarda istifadə olunur?
+- List de dict de data toplusudur lakin dict de elementler key value sistemi ile listde ise index value ile baglidirlar. Yeni listde elementler nizamli dictde nizamsizdir keyler vasitesile teyin olunurlar
+## Dict metodlarından 5 ədəd metodun izahatını yazın
+# 1. clear() method
+- clear() methodu dictin butun elementlerini silir dicti bos dict edir
+- parametr qebul etmir
+- Gelin misallarla aydinlasdiraq...
+# misal
+a= {1:1 ,2:4 ,3:9 }
+print("Ilkin hal:",a)
+a.clear()
+print("son hal:",a)
+Neticemiz bele olacaq:
+>>> Ilkin hal: {1: 1, 2: 4, 3: 9}
+    son hal: {}
+# 2. copy() methodu
+- copy() methodu dictionu copy ederek basqa bir deyisene menimsetmek ucun istifade olunur
+- parametr qebul etmir
+- Gelin misallarla aydinlasdiraq...
+# misal
+a= {1: 1, 2: 4, 3: 9}
+print("a dicti:",a)
+b = a.copy()
+print("b dicti:",b)
+Neticemiz bele olacaq:
+>>> a dicti: {1: 1, 2: 4, 3: 9}
+    b dicti: {1: 1, 2: 4, 3: 9}
+>>>
+# 3. fromkeys() methodu
+- fromkeys(keys,value) methodu dict yaratmaq ucun istifade olunur lakin butun keylerin valuesi eyni olur
+- parametr olaraq keys ve bir dene value qebul edir
+- Gelin misallarla aydinlasdiraq...
+# fromkeys() variant01
+a= dict.fromkeys(['a','b'],100)
+print(a)
+Neticemiz bele olacaq:
+>>> {'a':100 , 'b':100}
+>>>
+# fromkeys() deyisen ile variant02
+x= ('a','b')
+y=100
+a= dict.fromkeys(x,y)
+print(a)
+Neticemiz bele olacaq:
+>>> {'a':100, 'b':100}
+>>>
+# 4. keys() methodu
+- keys() methodu dictdeki keyleri gostermek ucun istifade olunur
+- parametr qebul etmir
+- Gelin misallarla aydinlasdiraq...
+# misal
+a = {1: 1, 2: 4, 3: 9}
+print(a.keys())
+Neticemiz bele olacaq:
+>>> dict_keys([1, 2, 3])
+>>>
+# 5. popitem() methodu
+- popitem() methodu dictden sonuncu elementi silmek ucun istifade olunur
+- parametr qebul etmir
+- Gelin misallarla aydinlasdiraq...
+# misal
+a = {1: 1, 2: 4, 3: 9}
+print("dict:",a)
+a.popitem()
+print("dictin son hali:",a)
+Neticemiz bele olacaq:
+>>> dict: {1: 1, 2: 4, 3: 9}
+    dictin son hali: {1: 1, 2: 4}
+>>>
