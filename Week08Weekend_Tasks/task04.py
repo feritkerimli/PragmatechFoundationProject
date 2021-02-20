@@ -6,5 +6,6 @@ def sorting(lst):
         s= min(lst)
         l.append(s)
         lst.remove(s)
+    l.reverse()
     print("Azalan sira:",l)
 sorting(myList)
