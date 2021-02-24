@@ -173,11 +173,24 @@ print(Pangram("The quick brown fox jumps over the lazy dog"))
 # Question15
 def Sorting(Str):
     s=Str.split("-")
-    s.sort()                 
-    return s
+    s.sort()
+    c="" 
+    for i in s:
+        if i != s[len(s)-1]:
+            c+=i+"-"
+        else:
+            c+=i
+    return c
 print(Sorting("green-red-yellow-black-white"))
 
+# Question16
+def ListGenerator(start,end):
+    lst=[]
+    for i in range(start,end+1):
+        lst.append(i**2)
+    return lst
+print(ListGenerator(1,30))
 
-    
-        
+# Question17
+
 
