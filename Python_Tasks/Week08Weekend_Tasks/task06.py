@@ -4,6 +4,6 @@ def singleElements(lst):
     for i in range(0,len(lst),2):
         s.append(lst[i])
     lst=s
-    print("Single index elements:",lst)
+    print("Double index elements:",lst)
 singleElements(myList)
             
