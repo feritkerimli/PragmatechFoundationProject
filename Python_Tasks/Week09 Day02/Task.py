@@ -3,14 +3,24 @@
 # Question01
 myList01=[1,2,3]
 def Max(lst):
-  return max(lst)
+    lstMax=0
+    for i in range(len(lst)):
+        for j in range(i+1,len(lst)):
+            if lst[i]>lst[j]:
+                lstMax=lst[i]
+            else:
+                lstMax=lst[j]
+                
+    return lstMax
 print(Max(myList01))
 
 # Question02
 myList02=[8, 2, 3, 0, 7]
 def Sum(lst):
-  return sum(lst)
-
+    sumLst=0
+    for i in lst:
+        sumLst+=i
+    return sumLst
 print(Sum(myList02))
 
 # Question03
@@ -38,8 +48,10 @@ print(Reverse(myStr04))
 # Question05
 import math
 def Factiorial(num):
-    return math.factorial(num)
-
+    n=1
+    for i in range(1,num+1):
+        n*=i
+    return n
 print(Factiorial(5))
 
 # Question06
@@ -52,14 +64,12 @@ print(checkRange(1,5,3))
 
 # Question07
 def Cases(Str):
-    upper=['A','B','C','D','E','F','G','H','X','I','J','K','Q','L','M','N','O','P','R','S','T','U','V','Y','Z']
-    lower=['a','b','c','d','e','f','g','h','x','i','j','k','q','l','m','n','o','p','r','s','t','u','v','y','z']
     upperCost=0
     lowerCost=0
     for i in Str:
-        if i in upper:
+        if i.isupper():
             upperCost+=1
-        elif i in lower:
+        elif i.islower():
             lowerCost+=1
     print("Upper cost:",upperCost,"Lower cost:",lowerCost)
 Cases('The quick Brow Fox')
@@ -153,7 +163,6 @@ PascalTriangle(5)
 
 # Question14
 def Pangram(Str):
-    case=['a','b','c','d','e','f','g','h','x','i','j','k','q','l','m','n','o','p','r','s','t','u','v','y','z','w']
     s= Str.lower()
     y=""
     c=0
@@ -161,7 +170,7 @@ def Pangram(Str):
         if i not in y :
             y+=i
     for i in y :
-        if i in case:
+        if i.islower():
             c+=1
     if c >=26:
         return "Yes"
@@ -190,7 +199,5 @@ def ListGenerator(start,end):
         lst.append(i**2)
     return lst
 print(ListGenerator(1,30))
-
-# Question17
 
 
